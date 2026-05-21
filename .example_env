@@ -1,0 +1,18 @@
+HF_TOKEN=""
+HF_BASE_USER=""
+PYTHONNOUSERSITE=1
+
+# Where to save cache etc.
+SCRATCH="/.cache"
+
+# Cache Directories (using the SCRATCH variable)
+TORCH_HOME="$SCRATCH/.torch-cache"
+HF_HOME="$SCRATCH/.hf-cache"
+XDG_CACHE_HOME="$SCRATCH/.cache"
+XDG_CONFIG_HOME="$SCRATCH/.config"
+XDG_DATA_HOME="$SCRATCH/.local/share"
+TRITON_CACHE_DIR="$SCRATCH/.triton/.triton-cache"
+CUDA_CACHE_PATH="$SCRATCH/.nv/ComputeCache"
+AITER_JIT_DIR="$SCRATCH/aiter-jit-dir"
+
+CONTAINER=""

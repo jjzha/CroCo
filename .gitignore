@@ -1,0 +1,9 @@
+.env*
+.cache
+.euroeval_cache
+data/
+logs/
+output/
+results/
+core
+.tmp*
