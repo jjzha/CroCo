@@ -2,9 +2,17 @@
 
 Code for the paper:
 
-> **CroCo: Cross-Lingual Contrastive Self-Distillation for Preference Tuning**
+> **CroCo: Cross-Lingual Contrastive Preference Tuning on Self-Generations**
+
+> Prior work establishes that controlled contrastiveness between self-generated responses from large language models, set via reward scores, improves downstream preference tuning in English. We extend this method to multiple languages and evaluate two models across a total of 14 high and low-resource languages on a diverse set of tasks.  Our central finding is that cross-lingual contrastive preference tuning on self-generations (CroCo) transfers without language-specific preference annotation.  A reward model trained on English preferences (atop a multilingual base) produces useful within-language rankings across most languages, and pairing in either a monolingual or multilingual setting improves over each model on the majority of setups while preventing the catastrophic forgetting of supervised fine-tuning.  We observe that the gains require on-policy data. Off-policy responses reduce the benefit and online preference optimization fails to improve over the offline variant. Specifically, on structured tasks, our method matches or exceeds the base in 6/7 languages for EuroLLM-9B and 4/7 settings for Aya-3B. On open-ended generation, both tuned models win against their respective base across 11 evaluated languages. Overall, we show promising directions for multilingual preference tuning.
 
 ---
+
+## Data and Models
+
+Find the data and models here:
+
+https://huggingface.co/collections/jjzha/croco
 
 ## Overview
 
