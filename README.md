@@ -23,6 +23,7 @@ The full pipeline consists of eight numbered steps, each with a corresponding sc
 | 0 | `0.translate_data.sh` | Translate English data into 10 target languages using `vllm-translategemma-27b-it` |
 | 1 | `1.vllm_inference.sh` | Generate 64 candidate responses per prompt with the base model via vLLM |
 | 2 | `2.score_reward.sh` | Score all responses with a reward model to construct chosen/rejected pairs |
+| 2.5 | `prepare_fine_tuning_data.sh` | Prepare the SFT and DPO data based on the scored files |
 | 3 | `3.sft.sh` | Supervised fine-tuning (SFT) on high-scoring responses with LoRA |
 | 4 | `4.dpo.sh` | Direct Preference Optimisation (DPO) on chosen/rejected pairs with LoRA |
 | 5 | `5.euroeval.sh` | Evaluate fine-tuned models on EuroEval benchmarks across 11 languages |
